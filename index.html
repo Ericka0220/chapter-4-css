@@ -29,7 +29,6 @@
         nav ul li {
             display: inline;
             margin: 0 10px;
-
         }
         nav ul li a {
             color: rgb(255, 255,240);
@@ -53,6 +52,18 @@
             padding: 5px;
             margin: 5px 0;
             text-align: center;
+            border-style: outset;
+            border-width: 3px;
+        }
+        .like-section {
+            padding: 5px;
+            margin: 5px 0;
+        }
+        .my-likes {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 400px;
         }
     </style>
 </head><body>
@@ -80,13 +91,15 @@
        <h2>Welcome!</h2>
        <p>This is a simple page to practice CSS styling.</p>
    </section>
-   <section>
+   <section class="like-section">
    <h2>Things I like</h2>
+   <div class="my-likes">
    <ul>
-       <li>Item 1</li>
-       <li>Item 2</li>
-       <li>Item 3</li>
+       <li>Books</li>
+       <li>Snakes</li>
+       <li>Dragon</li>
    </ul>
+   </div>
    </section>
 <footer>
    <p>Created by Ericka Flower</p>
